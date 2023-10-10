@@ -50,8 +50,12 @@ function playSound(name){
 }
 
 function animatePress(currentColour){
-$("#"+ currentColour).addClass("pressed").delay(500).removeClass("pressed");
+  $("#" + currentColour).addClass("pressed");
+  setTimeout(function(){
+    $("#" + currentColour).removeClass("pressed");
+  }, 100); // Adjust the delay duration as needed
 }
+
 
 function checkAnswer(currentLevel){
   if(gamePattern[currentLevel] === userClickedPattern[currentLevel])
