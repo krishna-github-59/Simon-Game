@@ -53,7 +53,7 @@ function animatePress(currentColour){
   $("#" + currentColour).addClass("pressed");
   setTimeout(function(){
     $("#" + currentColour).removeClass("pressed");
-  }, 1000); // Adjust the delay duration as needed
+  }, 300); // Adjust the delay duration as needed
 }
 
 
